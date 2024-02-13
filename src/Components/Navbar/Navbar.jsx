@@ -20,7 +20,7 @@ export const Navbar = () => {
         <img src={logo} alt='navlogo'></img>
         <p>GTSHOPIFY</p>
         </div>
-        <img onClick={dropdown_toggle} className ='nav-dropdown'style={{ width: '30px', height: '30px',marginTop:'8px', marginLeft:'18px', marginBottom:'10px'}} src={drop_down}></img>
+        <img onClick={dropdown_toggle} className ='nav-dropdown'style={{ width: '30px', height: '30px',marginTop:'8px', marginLeft:'18px', marginBottom:'10px'}} src={drop_down} alt="dropdown"></img>
             <ul ref={menuRef}className="nav-menu">
                 <li onClick={()=>{setMenu('shop')}}><Link style={{textDecoration:'none'}} to='/'>Shop</Link>{menu==='shop'?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu('men')}}><Link style={{textDecoration:'none'}} to='/mens'>Men</Link>{menu==='men'?<hr/>:<></>}</li>
