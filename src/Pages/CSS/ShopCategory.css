@@ -47,7 +47,7 @@ width:82%;
         margin: auto;
     }
     .shopcategory-sort{
-        padding: 50px 10px;
+        padding: 10px 10px;
         font-size: 12px;
         
     }
@@ -89,4 +89,10 @@ width:82%;
     .shopcategory-products{
         grid-template-columns: 1fr 1fr;
     }
+    .shopcategory-sort{
+        padding: 8px 8px;
+        font-size: 10px;
+        
+    }
+
 }
