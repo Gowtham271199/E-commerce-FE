@@ -10,6 +10,8 @@ import { RelatedProducts } from '../Components/RelatedProducts/RelatedProducts'
   const {all_product}=useContext(ShopContext)
   const {productId}=useParams()
   const product=all_product.find((e)=>e.id===Number(productId));
+  console.log('productId:', productId);
+  console.log('product:', product);
 
   if (!product) {
     console.error(`Product with ID ${productId} not found.`);
