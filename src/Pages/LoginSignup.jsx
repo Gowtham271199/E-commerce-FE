@@ -16,7 +16,7 @@ export const LoginSignup = () => {
   const login =async ()=>{
     console.log("Login Function Excuted",formData)
     let responseData;
-    await fetch('http://localhost:4000/login',{
+    await fetch('https://localhost:4000/login',{
       method:'POST',
       headers:{
         Accept:'application/json',
@@ -35,7 +35,7 @@ export const LoginSignup = () => {
   const signup = async()=>{
     console.log("signup Function Excuted",formData)
     let responseData;
-    await fetch('http://localhost:4000/signup',{
+    await fetch('https://localhost:4000/signup',{
       method:'POST',
       headers:{
         Accept:'application/json',
