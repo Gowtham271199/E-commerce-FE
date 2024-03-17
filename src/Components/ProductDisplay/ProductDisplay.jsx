@@ -7,6 +7,10 @@ import { ShopContext } from '../../Context/ShopContext'
 export const ProductDisplay = (props) => {
     const{product}=props;
     const{addToCart}=useContext(ShopContext)
+    if (!product) {
+        // You can handle this case accordingly, for example, show an error message or return null
+        return <p>Product not found</p>;
+      }
   return (
     <div className='productdisplay'>
         <div className="productdisplay-left">
@@ -17,7 +21,7 @@ export const ProductDisplay = (props) => {
             <img src={product.image} alt='product'></img>
         </div>
         <div className="productdisplay-img">
-            <img className='productdisplay-main-img'src={product.image} alt=''></img>
+            <img className='productdisplay-main-img'src={product.image} alt='product'></img>
         </div>
         </div>
         <div className="productdisplay-right">
